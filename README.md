@@ -7,20 +7,20 @@ we have to use svm techniques and best kernel for this problem.
 Comparison for all the kernels is to be provided
 
 
-###Note:
+# Note:
 i havent scaled the data set as all columns varies from range 0-255.No Particular column is driving the output.
 i havent removed all zeros columns as If in test data digit is not in center then it might then that column might be zero for training but it might be non-zero in test.
 mnist data is clean and it has no left and right shifts or rotation
 But taking care of all these i haven't removed columns with all zeros values in train and test
 
 
+# Methods:
+
 Only used 10% of training data for this work.
-## used doParallel library for fast computation using multi cores
-
-
+used doParallel library for fast computation using multi cores
 Used linear,poly and Radial and 5-fold cv for cross validation.
 
-
+# Conclusion 
 linear kernel was giving 91% accuracy on test set which is good.
 poly kernel was giving 95.04% accuracy which degree-2 so adding slightly non-linearity 
 accuracy improves significantly for same C value justified by Cross-validation.
